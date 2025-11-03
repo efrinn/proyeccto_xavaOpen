@@ -3,6 +3,7 @@
 <Context>
 
 	<JarScanner scanClassPath="false" />
+	<CookieProcessor sameSiteCookies="lax" /> <!-- Para cumplir con OWASP -->
 	
 	<!-- 
 	Para definir el acceso a tu base de datos descomenta una de las
@@ -17,74 +18,74 @@
 	-->
 	 
 	<!-- HSQLDB -->   	
-    <Resource name="jdbc/FacturacionDS" auth="Container" type="javax.sql.DataSource"
+    <Resource name="jdbc/PracticaOpenXavaDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="sa" password="" 
 	      driverClassName="org.hsqldb.jdbc.JDBCDriver"
 	      url="jdbc:hsqldb:hsql://localhost:1666"/>
 	      
 	<!-- MySQL       
-    <Resource name="jdbc/FacturacionDS" auth="Container" type="javax.sql.DataSource"
+    <Resource name="jdbc/PracticaOpenXavaDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="root" password="" 
 	      driverClassName="com.mysql.cj.jdbc.Driver"
-	      url="jdbc:mysql://localhost:3306/Facturaciondb"/>	      
+	      url="jdbc:mysql://localhost:3306/PracticaOpenXavadb"/>	      
 	-->      
 	
 	<!-- PostgreSQL 
-	<Resource name="jdbc/FacturacionDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/PracticaOpenXavaDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="postgres" password="" 
 	      driverClassName="org.postgresql.Driver" 
-	      url="jdbc:postgresql://localhost/Facturaciondb"/>
+	      url="jdbc:postgresql://localhost/PracticaOpenXavadb"/>
 	-->
 	
 	<!-- Oracle 
-	<Resource name="jdbc/FacturacionDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/PracticaOpenXavaDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="oracle.jdbc.OracleDriver"
-	      url="jdbc:oracle:thin:@localhost:1521:Facturaciondb"/>
+	      url="jdbc:oracle:thin:@localhost:1521:PracticaOpenXavadb"/>
 	-->	
 	
 	<!-- AS/400 
-	<Resource name="jdbc/FacturacionDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/PracticaOpenXavaDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="com.ibm.as400.access.AS400JDBCDriver" 
-	      url="jdbc:as400:localhost/Facturacionlib"/>
+	      url="jdbc:as400:localhost/PracticaOpenXavalib"/>
 	-->
 	
 	<!-- Microsoft SQL Server
-	<Resource name="jdbc/FacturacionDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/PracticaOpenXavaDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" 
-	      url="jdbc:sqlserver://localhost:1433;databaseName=Facturaciondb"/>
+	      url="jdbc:sqlserver://localhost:1433;databaseName=PracticaOpenXavadb"/>
 	-->
 	
 	<!-- Informix
-	<Resource name="jdbc/FacturacionDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/PracticaOpenXavaDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="com.informix.jdbc.IfxDriver"
-	      url="jdbc:informix-sqli://localhost:1533/Facturaciondb:INFORMIXSERVER=tuservidor"/>
+	      url="jdbc:informix-sqli://localhost:1533/PracticaOpenXavadb:INFORMIXSERVER=tuservidor"/>
 	-->            
 	
 	<!-- Db2
-	<Resource name="jdbc/FacturacionDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/PracticaOpenXavaDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="com.ibm.db2.jcc.DB2Driver"
-	      url="jdbc:db2://localhost:50000/Facturaciondb"/>
+	      url="jdbc:db2://localhost:50000/PracticaOpenXavadb"/>
 	-->
 	
 	<!-- Firebird
-	<Resource name="jdbc/FacturacionDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/PracticaOpenXavaDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="org.firebirdsql.jdbc.FBDriver"
-	      url="jdbc:firebirdsql://localhost:3050/c:/db/Facturacion.fdb"/>
+	      url="jdbc:firebirdsql://localhost:3050/c:/db/PracticaOpenXava.fdb"/>
 	-->
 	                  	      
 </Context>

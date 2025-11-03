@@ -5,11 +5,11 @@
 <controladores>
     
     <!-- Variable de entorno: 
-    <var-entorno nombre="Facturacion_ANYO_DEFECTO" valor="2015"/>
+    <var-entorno nombre="PracticaOpenXava_ANYO_DEFECTO" valor="2015"/>
     -->
     
-    <!-- Objeto de sesiï¿½n:
-    <Objeto nombre="Facturacion_anyoActivo" clase="java.lang.Integer" valor="2015" 
+    <!-- Objeto de sesión:
+    <Objeto nombre="PracticaOpenXava_anyoActivo" clase="java.lang.Integer" valor="2015" 
             ambito="global"/>
     -->
     
